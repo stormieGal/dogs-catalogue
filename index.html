@@ -11,6 +11,57 @@
     <title>Our Dogs Catalogue</title>
   </head>
   <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo"></div>
+        <h1>
+          Puppy Catalogue
+        </h1>
+      </header>
+
+      <main>
+        <table>
+          <caption>
+            <label for="all_breeds">breed displayed</label>
+            <select name="all_breeds" id="all_breeds">
+              <option value="">--Choose a breed--</option>
+            </select>
+          </caption>
+          <thead>
+            <tr>
+              <td>Picture</td>
+
+              <td>Breed</td>
+              <td>sub-breed</td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <td>Number displayed:</td>
+            <td></td>
+            <td>
+              <select
+                name=""
+                aria-label="The number of puppy to display"
+                id="num_displayed"
+              >
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="10">10</option>
+                <option value="all">All</option>
+              </select>
+            </td>
+          </tfoot>
+        </table>
+      </main>
+
+      <footer>
+        <p>
+          &copy; <a href="https://twitter.com/GalStormie">StormieGal</a> 2020
+        </p>
+      </footer>
+    </div>
+
     <script src="./scripts/index.js"></script>
   </body>
 </html>

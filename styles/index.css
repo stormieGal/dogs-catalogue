@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+/* Border box declaration */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+  font-family: cursive;
+  font-size: 14px;
+}
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+header,
+table,
+tr {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+header {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 2em;
+  font-family: "Indie Flower", cursive;
+}
+.logo img {
+  border-radius: 50%;
+}
+table {
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  min-height: 15em;
+}
+caption,
+tfoot {
+  margin: 2em 0;
+  align-self: flex-end;
+}
+thead {
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: solid 1.5px grey;
+  font-family: "Indie Flower", cursive;
+  color: grey;
+}
+tr {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+tbody td,
+thead td {
+  flex: 0 0 calc(90% / 3);
+  text-align: center;
+}
+tbody tr:nth-child(1) {
+  margin-top: 0.5em;
+}
+tbody tr:nth-child(even) {
+  background-color: rgba(126, 123, 123, 0.274);
+  margin: 0.5em 0;
+}
+a {
+  text-decoration-line: none;
+  color: grey;
+}
