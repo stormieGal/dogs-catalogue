@@ -19,7 +19,6 @@ logo.style.height = "150px";
 img.style.width = "inherit";
 img.style.height = "inherit";
 logo.appendChild(img);
-
 let i = 0;
 let timerId = setInterval(() => {
   const promiseRandom = fetch(RANDOM);
@@ -193,6 +192,6 @@ allBreeds.addEventListener("change", function() {
       .catch(function(err) {
         let tfoot = document.querySelector("tfoot");
       });
-    // Take this into account.
+    // Take this into account by testting. Find any testcase in the API results.
   }
 });
